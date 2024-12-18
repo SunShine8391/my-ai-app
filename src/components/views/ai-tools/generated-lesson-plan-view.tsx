@@ -41,6 +41,7 @@ export function GeneratedLessonPlanView() {
 
 	useEffect(() => {
 		generateHtml(lessonPlan.text);
+		setHtml(lessonPlan.text);
 	}, [generateHtml, lessonPlan]);
 
 	if (lessonPlan.text.length === 0) return <></>;
